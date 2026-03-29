@@ -3,3 +3,13 @@
 @theme {
   --font-sans: 'Geist', system-ui, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+html:not(.dark) {
+  background-color: #f4f4f5;
+}

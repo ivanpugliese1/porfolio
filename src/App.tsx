@@ -9,9 +9,9 @@ import BottomNav from './components/layout/BottomNav'
 
 export default function App() {
   return (
-    <div className="bg-[#0a0a0a] text-slate-200 min-h-screen font-sans">
+    <div className="bg-white dark:bg-[#0a0a0a] text-slate-800 dark:text-slate-200 min-h-screen font-sans">
       <Header />
-      <main className="max-w-[1200px] mx-auto px-6 pb-24">
+      <main className="flex flex-col items-center justify-center max-w-[1200px] mx-auto px-6 pb-24">
         <Hero />
         <Projects />
         <Experience />

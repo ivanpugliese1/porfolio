@@ -28,7 +28,7 @@ export default function BottomNav() {
   }, [])
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-20 border-t border-white/5 bg-[#0a0a0a]/90 backdrop-blur-md">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-20 border-t border-slate-200 dark:border-white/5 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-md">
       <ul className="flex justify-around items-center h-16 max-w-[700px] mx-auto px-2">
         {links.map(({ label, href, icon: Icon }) => {
           const id = href.replace('#', '')
@@ -42,9 +42,9 @@ export default function BottomNav() {
               >
                 <Icon
                   size={18}
-                  className={isActive ? 'text-blue-400' : 'text-slate-500 group-hover:text-slate-300 transition-colors'}
+                  className={isActive ? 'text-blue-500 dark:text-blue-400' : 'text-slate-800 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors'}
                 />
-                <span className={`text-[13px] tracking-widest transition-colors ${isActive ? 'text-blue-400' : 'text-slate-600 group-hover:text-slate-400'}`}>
+                <span className={`text-sm transition-colors ${isActive ? 'text-blue-500 dark:text-blue-400' : 'text-slate-800 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300'}`}>
                   {label}
                 </span>
               </a>

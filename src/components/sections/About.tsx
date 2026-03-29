@@ -2,45 +2,32 @@ const interests = [
   { emoji: '💻', label: 'Desarrollo web' },
   { emoji: '🔐', label: 'Ciberseguridad' },
   { emoji: '🎵', label: 'Música' },
-  { emoji: '☕', label: 'Café' },
+  { emoji: '⚽', label: 'Deportes' },
 ]
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="py-16 flex flex-col justify-center items-center border-t border-white/5">
+    <section id="sobre-mi" className="py-16 max-w-[900px] flex flex-col justify-center items-center border-t border-white/5">
 
-      <h2 className="text-3xl font-black tracking-tighter text-white mb-1">
+      <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white mb-10">
         Sobre mí
       </h2>
-      <p className="text-slate-500 text-sm mb-8">
-        Un poco de contexto
-      </p>
 
       <div className="flex flex-col md:flex-row gap-8 items-center">
 
         {/* Texto izquierda */}
         <div className="flex-1 space-y-4 order-last md:order-first">
-          <h3></h3>
-          <p className="text-slate-400 text-[15px] leading-relaxed">
-            Soy Ivan Pugliese, desarrollador autodidacta en transición desde el mundo
-            comercial hacia el software. Empecé construyendo herramientas para el
-            negocio familiar y me enganché.
+          <h3 className="text-lg font-bold text-slate-800 dark:text-white">
+            Desarrollador Fullstack en formación, aprendo haciendo.
+          </h3>
+          <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+            Vengo del mundo comercial: años trabajando codo a codo con clientes y equipos, traduciendo problemas reales en soluciones concretas. Hoy aplico esa experiencia al Desarrollo de Software.
           </p>
-          <p className="text-slate-400 text-[15px] leading-relaxed">
-            Actualmente estudiando{' '}
-            <strong className="text-slate-200 font-medium">
-              Análisis de Sistemas en Da Vinci
-            </strong>{' '}
-            y construyendo proyectos reales como portfolio. Vengo del mundo B2B —
-            Mercado Pago, seguros — lo que me da una perspectiva muy orientada
-            al impacto real.
+          <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+            A lo largo de mi desarrollo personal y profesional, logre mejorar mis habilidades blandas, tales como la comunicación, el trabajo en equipo, la empatía y la resolución de problemas, lo que me ha permitido adaptarme a diferentes entornos laborales y colaborar eficazmente con colegas y clientes.
           </p>
-          <p className="text-slate-400 text-[15px] leading-relaxed">
-            A largo plazo me interesa{' '}
-            <strong className="text-slate-200 font-medium">
-              la ciberseguridad y el desarrollo seguro de aplicaciones
-            </strong>
-            .
+          <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+            Como dato de color, vengo de estudiar el Profesorado de Educación Física, esto en mis comienzos universitarios, me apasiona el deporte y la actividad física, y aunque no me dedique a eso, sigo practicándolo como hobby.
           </p>
 
           {/* Intereses */}
@@ -48,7 +35,7 @@ export default function About() {
             {interests.map(({ emoji, label }) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full bg-[#111] border border-white/5 text-slate-400 hover:border-white/10 transition-colors"
+                className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full bg-slate-100 dark:bg-[#111] border border-slate-200 dark:border-white/5 text-slate-500 dark:text-slate-400 hover:border-slate-300 dark:hover:border-white/10 transition-colors"
               >
                 <span>{emoji}</span>
                 {label}
@@ -57,18 +44,15 @@ export default function About() {
           </div>
         </div>
 
-        {/* Foto derecha */}
         <div className="flex justify-center md:justify-end order-first md:order-last flex-shrink-0">
-          <div className="relative w-[250px]">
+          <div className="relative w-[250px] ">
 
-            {/* Fondo decorativo */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-950/40 to-transparent blur-xl scale-95" />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-100 dark:from-blue-950/40 to-transparent blur-xl scale-95" />
 
-            {/* Imagen */}
             <img
-              src="/about.jpg"
+              src="./perfil.jpg"
               alt="Ivan Pugliese"
-              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10 grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
         </div>
