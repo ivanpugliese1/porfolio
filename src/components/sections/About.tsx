@@ -7,15 +7,13 @@ const interests = [
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="py-16 max-w-[900px] flex flex-col justify-center items-center border-t border-white/5">
+    <section id="sobre-mi" className="py-16 max-w-[900px] flex flex-col justify-center items-center border-t border-slate-200 dark:border-white/5">
 
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white mb-10">
         Sobre mí
       </h2>
 
       <div className="flex flex-col md:flex-row gap-8 items-center">
-
-        {/* Texto izquierda */}
         <div className="flex-1 space-y-4 order-last md:order-first">
           <h3 className="text-lg font-bold text-slate-800 dark:text-white">
             Desarrollador Fullstack en formación, aprendo haciendo.
@@ -30,7 +28,6 @@ export default function About() {
             Como dato de color, vengo de estudiar el Profesorado de Educación Física, esto en mis comienzos universitarios, me apasiona el deporte y la actividad física, y aunque no me dedique a eso, sigo practicándolo como hobby.
           </p>
 
-          {/* Intereses */}
           <div className="flex flex-wrap gap-2 pt-2">
             {interests.map(({ emoji, label }) => (
               <span
@@ -45,20 +42,18 @@ export default function About() {
         </div>
 
         <div className="flex justify-center md:justify-end order-first md:order-last flex-shrink-0">
-          <div className="relative w-[250px] ">
+          <div className="relative w-[300px] shadow-[0_20px_50px_rgba(96,165,250,0.5)]">
 
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-100 dark:from-blue-950/40 to-transparent blur-xl scale-95" />
+            <div className="absolute inset-0 rounded-2xl" />
 
             <img
               src="./perfil.jpg"
               alt="Ivan Pugliese"
-              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10 grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10"
             />
           </div>
         </div>
-
       </div>
-
     </section>
   )
 }

@@ -4,7 +4,8 @@ export interface Project {
   tags: string[]
   github?: string
   preview?: string
-  featured?: boolean
+  featured?: boolean,
+  image?: string
 }
 
 export interface Experience {

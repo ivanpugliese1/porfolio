@@ -6,7 +6,7 @@ const links = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'ivan@email.com',
+    value: 'ivanpugliesecontacto@gmail.com',
     href: 'mailto:ivanpugliesecontacto@gmail.com',
   },
   {
@@ -25,13 +25,13 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contacto" className="py-16 w-full flex flex-col justify-center items-center border-t border-white/5">
+    <section id="contacto" className="py-16 w-full flex flex-col justify-center items-center border-t border-slate-200 dark:border-white/5">
 
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white mb-1">
         Contacto
       </h2>
       <p className="text-slate-600 dark:text-slate-400 text-base mb-8">
-        ¿Querés charlar? Podés encontrarme en:
+        Podés encontrarme en:
       </p>
 
       <div className="flex flex-col md:flex-row gap-3">
@@ -46,14 +46,14 @@ export default function Contact() {
               <Icon size={18} className="text-blue-500 dark:text-blue-400" />
             </div>
             <div>
-              <p className="text-xs text-slate-400 dark:text-slate-600 uppercase tracking-widest mb-0.5">
+              <p className="text-xs text-slate-600 dark:text-slate-400 uppercase tracking-widest mb-0.5">
                 {label}
               </p>
               <p className="text-sm text-slate-700 dark:text-slate-300 font-medium">
                 {value}
               </p>
             </div>
-            <span className="ml-auto text-slate-300 dark:text-slate-700 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors text-lg">
+            <span className="ml-auto text-slate-600 dark:text-slate-400 group-hover:text-slate-500 dark:group-hover:text-slate-400 transition-colors text-lg">
               →
             </span>
           </a>

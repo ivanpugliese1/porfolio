@@ -93,12 +93,10 @@ export default function Hero() {
         <a href="https://github.com/ivanpugliese1" target="_blank" className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors" aria-label="GitHub">
           <SiGithub size={22} />
         </a>
-        <a href="https://linkedin.com/in/" target="_blank" className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/ivan-pugliese" target="_blank" className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors" aria-label="LinkedIn">
           <FaLinkedin size={22} />
         </a>
       </motion.div>
-
-
     </section>
   )
 

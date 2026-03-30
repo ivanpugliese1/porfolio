@@ -5,7 +5,7 @@ import Tag from '../ui/tagStyles.tsx'
 export default function Projects() {
 
   return (
-    <section id="proyectos" className="py-16 border-t border-white/5">
+    <section id="proyectos" className="py-16 border-t border-slate-200 dark:border-white/5">
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white text-center mb-2">
         Proyectos
       </h2>
@@ -16,11 +16,20 @@ export default function Projects() {
       <div className="flex flex-wrap gap-4 justify-center">
         {projects.map((project) => (
           <div key={project.name} className="bg-slate-50 dark:bg-[#111] border border-slate-200 dark:border-white/5 shadow-sm dark:shadow-none rounded-xl overflow-hidden hover:border-slate-300 dark:hover:border-white/10 transition-colors flex flex-col w-full sm:w-[calc(33.333%-11px)]">
-            <div className="w-full h-36 bg-gradient-to-br from-blue-100 dark:from-blue-950/20 to-slate-50 dark:to-[#0a0a0a] flex items-center justify-center border-b border-slate-200 dark:border-white/5">
-              <span className="text-slate-300 dark:text-slate-700 text-xs tracking-widest uppercase">
-                screenshot
-              </span>
-            </div>
+            <div className="w-full h-50 bg-gradient-to-br from-blue-100 dark:from-blue-950/20 to-slate-50 dark:to-[#0a0a0a] flex items-center justify-center border-b border-slate-200 dark:border-white/5">
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-blue-100 dark:from-blue-950/20 to-slate-50 dark:to-[#0a0a0a] flex items-center justify-center">
+                  <span className="text-slate-300 dark:text-slate-700 text-xs tracking-widest uppercase">
+                    screenshot
+                  </span>
+                </div>
+              )}</div>
             <div className="p-5 flex flex-col flex-1 gap-2">
               <h3 className="text-[21px] font-bold text-slate-800 dark:text-white tracking-tight">
                 {project.name}
