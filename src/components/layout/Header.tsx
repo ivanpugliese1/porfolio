@@ -1,18 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useTheme } from '../../hooks/useTheme.ts'
 import { Sun, Moon } from 'lucide-react'
 
 export default function Header() {
-  const [dark, setDark] = useState(true)
+  const { theme, toggleTheme } = useTheme()
   const links = [
     { label: 'Experiencia', href: '#experiencia' },
     { label: 'Proyectos', href: '#proyectos' },
     { label: 'Sobre mi', href: '#sobre-mi' },
     { label: 'Contacto', href: '#contacto' },
   ]
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-  })
 
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 dark:border-white/5 backdrop-blur-md bg-white/80 dark:bg-[#0a0a0a]/80">
@@ -39,10 +35,10 @@ export default function Header() {
         </ul>
 
         <button
-          onClick={() => setDark(!dark)}
+          onClick={toggleTheme}
           className="w-8 h-8 flex items-center justify-center rounded-full border border-slate-400 dark:border-white/20 text-slate-800 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white hover:border-slate-300 dark:hover:border-white/25 transition-colors cursor-pointer"
         >
-          {dark ? <Sun size={14} /> : <Moon size={14} />}
+          {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
         </button>
       </nav>
     </header>

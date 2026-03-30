@@ -9,11 +9,13 @@ export default function Footer() {
           © 2026 <span className="font-bold">Ivan Pugliese</span>. Casi todos los derechos reservados.
         </p>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col mr-19 md:flex-row md:mr-0 align-center gap-4">
           <span className="text-sm text-slate-600 dark:text-slate-400">Desarrollado con</span>
-          <Tag name="React" />
-          <Tag name="TypeScript" />
-          <Tag name="Tailwind" />
+          <div className="flex align-center gap-2">
+            <Tag name="React" />
+            <Tag name="TypeScript" />
+            <Tag name="Tailwind" />
+          </div>
         </div>
 
       </div >

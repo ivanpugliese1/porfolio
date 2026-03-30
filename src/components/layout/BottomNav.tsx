@@ -44,7 +44,7 @@ export default function BottomNav() {
                   size={18}
                   className={isActive ? 'text-blue-500 dark:text-blue-400' : 'text-slate-800 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors'}
                 />
-                <span className={`text-sm transition-colors ${isActive ? 'text-blue-500 dark:text-blue-400' : 'text-slate-800 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300'}`}>
+                <span className={`text-[13px] transition-colors ${isActive ? 'text-blue-500 dark:text-blue-400' : 'text-slate-800 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300'}`}>
                   {label}
                 </span>
               </a>
