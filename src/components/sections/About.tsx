@@ -49,7 +49,7 @@ export default function About() {
             <img
               src="./about.jpg"
               alt="Ivan Pugliese"
-              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10 brightness-65"
+              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10 brightness-70"
             />
           </div>
         </div>
