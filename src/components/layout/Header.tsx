@@ -21,7 +21,7 @@ export default function Header() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-md text-slate-800 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors"
+                className="text-md text-slate-800 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 {link.label}
               </a>

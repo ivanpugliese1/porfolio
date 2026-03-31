@@ -41,15 +41,15 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end order-first md:order-last flex-shrink-0">
-          <div className="relative w-[300px] shadow-[0_20px_50px_rgba(96,165,250,0.5)]">
+        <div className="flex justify-center md:justify-end order-first md:order-last flex-shrink-0 rounded-2xl">
+          <div className="relative w-[300px] shadow-[0_10px_20px_rgba(96,165,250,0.5)] rounded-2xl">
 
             <div className="absolute inset-0 rounded-2xl" />
 
             <img
-              src="./perfil.jpg"
+              src="./about.jpg"
               alt="Ivan Pugliese"
-              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10"
+              className="relative z-10 w-full aspect-[3/4] object-cover rounded-2xl border border-slate-200 dark:border-white/10 brightness-65"
             />
           </div>
         </div>

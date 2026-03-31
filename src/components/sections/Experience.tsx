@@ -31,7 +31,7 @@ export default function Experience() {
                 {item.company}
               </p>
 
-              <div className="flex items-center justify-between mb-2">
+              <div className="flex flex-col md:flex-row gap-2 md:items-center md:justify-between mb-4">
                 <span className="text-xs text-slate-600 dark:text-slate-400">
                   {item.from} — {item.to}
                 </span>

@@ -29,7 +29,7 @@ export default function Hero() {
         <img
           src="./img-4-x-4.jpg"
           alt="Ivan Pugliese"
-          className="w-20 md:w-30 h-auto rounded-full object-cover object-top border-2 border-green-400/30 shadow-[0_0_20px_rgba(96,165,250,0.2)]"
+          className="w-20 md:w-25 h-auto rounded-full object-cover object-top border-2 border-green-400/30 shadow-[0_0_20px_rgba(96,165,250,0.2)] brightness-55"
         />
 
         <a href="https://linkedin.com/in/ivan-pugliese" target="_blank" className="inline-flex items-center gap-2 bg-green-800/10 border border-green-400 rounded-full px-5 py-2 text-sm font-medium text-green-500 dark:text-green-400 hover:border-green-600 transition-colors mt-10">
