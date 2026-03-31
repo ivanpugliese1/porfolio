@@ -14,11 +14,6 @@ export default function Header() {
     <header className="sticky top-0 z-20 border-b border-slate-200 dark:border-white/5 backdrop-blur-md bg-white/80 dark:bg-[#0a0a0a]/80">
       <nav className="max-w-[700px] mx-auto px-6 h-14 w-full flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img
-            src="./img-4-x-4.png"
-            alt="Ivan Pugliese"
-            className="w-10 h-10 rounded-full object-cover border border-blue-950/80 object-top"
-          />
           <span className="text-lg font-bold text-slate-800 dark:text-white">Ivan Pugliese</span>
         </div>
         <ul className="hidden md:flex gap-6">

@@ -18,20 +18,27 @@ const fadeUp: Variants = {
 export default function Hero() {
   return (
     <section className="py-20 flex flex-col items-center text-center">
-      <motion.a
-        href="https://linkedin.com/in/"
-        target="_blank"
+      <motion.div
         variants={fadeUp}
         initial="hidden"
         animate="show"
         custom={0}
-        className="inline-flex items-center gap-2 bg-green-300/20 dark:bg-green-950/20 border border-green-400 dark:border-green-800 rounded-full px-5 py-2 text-sm font-medium text-green-600 dark:text-green-400 mb-10 hover:border-green-600 dark:hover:border-green-600 transition-colors"
+        className="flex items-center gap-4 mb-10"
       >
-        <span className="w-2.5 h-2.5 rounded-full bg-green-500 dark:bg-green-400 shadow-[0_0_8px_#4ade80]" />
-        Disponible para trabajar
-      </motion.a>
 
-      {/* Título */}
+        <img
+          src="./img-4-x-4.jpg"
+          alt="Ivan Pugliese"
+          className="w-20 md:w-30 h-auto rounded-full object-cover object-top border-2 border-green-400/30 shadow-[0_0_20px_rgba(96,165,250,0.2)]"
+        />
+
+        <a href="https://linkedin.com/in/ivan-pugliese" target="_blank" className="inline-flex items-center gap-2 bg-green-800/10 border border-green-400 rounded-full px-5 py-2 text-sm font-medium text-green-500 dark:text-green-400 hover:border-green-600 transition-colors mt-10">
+          <span className="w-2.5 h-2.5 rounded-full bg-green-500 dark:bg-green-400 shadow-[0_0_8px_#4ade80]" />
+          Disponible para trabajar
+        </a>
+
+      </motion.div>
+
       <motion.h1
         variants={fadeUp}
         initial="hidden"
@@ -43,7 +50,7 @@ export default function Hero() {
         <span className="text-blue-400">Ivan Pugliese</span>
 
       </motion.h1>
-      {/* Subtítulo */}
+
       <motion.p
         variants={fadeUp}
         initial="hidden"
@@ -72,7 +79,7 @@ export default function Hero() {
         custom={4}
         className="flex flex-wrapgap-3 gap-4 mb-8">
 
-        <a href="cv/ivan-pugliese.pdf" download className="inline-flex items-center gap-2 bg-slate-800 dark:bg-white text-white dark:text-[#0a0a0a] px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-700 dark:hover:bg-slate-300 transition-colors">
+        <a href="./cv-ivanpugliese.pdf" download className="inline-flex items-center gap-2 bg-slate-800 dark:bg-white text-white dark:text-[#0a0a0a] px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-700 dark:hover:bg-slate-300 transition-colors">
           ↓ Descargar CV
         </a>
 

@@ -25,7 +25,7 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contacto" className="py-16 w-full flex flex-col justify-center items-center border-t border-slate-200 dark:border-white/5">
+    <section id="contacto" className="py-16 w-full flex flex-col justify-center items-center border-t border-slate-300 dark:border-white/5">
 
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white mb-1">
         Contacto

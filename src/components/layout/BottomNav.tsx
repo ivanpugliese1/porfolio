@@ -28,7 +28,7 @@ export default function BottomNav() {
   }, [])
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-20 border-t border-slate-200 dark:border-white/5 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-md">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-20 border-t border-slate-300 dark:border-white/5 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-md">
       <ul className="flex justify-around items-center h-16 max-w-[700px] mx-auto px-2">
         {links.map(({ label, href, icon: Icon }) => {
           const id = href.replace('#', '')

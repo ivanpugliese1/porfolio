@@ -5,7 +5,7 @@ import Tag from '../ui/tagStyles.tsx'
 export default function Projects() {
 
   return (
-    <section id="proyectos" className="py-16 border-t border-slate-200 dark:border-white/5">
+    <section id="proyectos" className="py-16 border-t border-slate-300 dark:border-white/5">
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white text-center mb-2">
         Proyectos
       </h2>

@@ -7,7 +7,7 @@ const interests = [
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="py-16 max-w-[900px] flex flex-col justify-center items-center border-t border-slate-200 dark:border-white/5">
+    <section id="sobre-mi" className="py-16 max-w-[900px] flex flex-col justify-center items-center border-t border-slate-300 dark:border-white/5">
 
       <h2 className="text-3xl font-black tracking-tighter text-slate-800 dark:text-white mb-10">
         Sobre mí
