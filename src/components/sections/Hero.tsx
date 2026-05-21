@@ -58,7 +58,7 @@ export default function Hero() {
         custom={2}
         className="text-xl sm:text-2xl font-semibold text-slate-400 dark:text-slate-500 tracking-tight mb-6"
       >
-        Fullstack Developer
+        Analista de datos y Web Developer
       </motion.p>
 
       {/* Descripción */}

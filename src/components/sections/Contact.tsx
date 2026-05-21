@@ -6,8 +6,8 @@ const links = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'ivanpugliesecontacto@gmail.com',
-    href: 'mailto:ivanpugliesecontacto@gmail.com',
+    value: 'ivanpugliese.f@gmail.com',
+    href: 'mailto:ivanpugliese.f@gmail.com',
   },
   {
     icon: SiGithub,

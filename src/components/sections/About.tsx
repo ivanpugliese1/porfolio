@@ -1,4 +1,5 @@
 const interests = [
+  { emoji: '📊', label: 'Análisis de datos' },
   { emoji: '💻', label: 'Desarrollo web' },
   { emoji: '🔐', label: 'Ciberseguridad' },
   { emoji: '🎵', label: 'Música' },
@@ -16,10 +17,10 @@ export default function About() {
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="flex-1 space-y-4 order-last md:order-first">
           <h3 className="text-lg font-bold text-slate-800 dark:text-white">
-            Desarrollador Fullstack en formación, aprendo haciendo.
+            Analista de datos en formación, aprendo haciendo.
           </h3>
           <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
-            Vengo del mundo comercial: años trabajando codo a codo con clientes y equipos, traduciendo problemas reales en soluciones concretas. Hoy aplico esa experiencia al Desarrollo de Software.
+            Vengo del mundo comercial: años trabajando codo a codo con clientes corporativos y equipos, traduciendo problemas reales de negocio en soluciones concretas. Hoy enfoco esa experiencia en el Análisis de Datos, transformando información en valor estratégico con SQL, Python y Power BI, apoyándome en mi conocimiento de desarrollo para tener una visión completa del producto.
           </p>
           <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
             A lo largo de mi desarrollo personal y profesional, logre mejorar mis habilidades blandas, tales como la comunicación, el trabajo en equipo, la empatía y la resolución de problemas, lo que me ha permitido adaptarme a diferentes entornos laborales y colaborar eficazmente con colegas y clientes.
